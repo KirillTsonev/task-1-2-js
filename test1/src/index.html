@@ -27,8 +27,14 @@
                 <h2>Login</h2>
                 <a href="#" class="more">Find more about us</a>
                 <form>
-                    <input type="email" name="email" placeholder="Email" required>
-                    <input type="text" name="password" placeholder="Password" required>
+                    <div class="inputContainer">
+                        <div class="inputIcon"><img src="../src/icons/letter.png" alt="Letter"></div>
+                        <input type="email" name="email" placeholder="Email" required class="email">
+                    </div>
+                    <div class="inputContainer">
+                        <div class="inputIcon"><img src="../src/icons/lock.png" alt="Lock"></div>
+                        <input type="text" name="password" placeholder="Password" required class="password">
+                    </div>
                 </form>
                 <a href="#" class="passReset">Forgot Password</a>
                 <button class="submitLogin">LOGIN</button>

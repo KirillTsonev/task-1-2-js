@@ -12,7 +12,7 @@
     display: flex
     justify-content: space-between
     align-items: center
-    width: 1000px
+    width: 1140px
     margin: 0 auto
     color: white
 
@@ -32,20 +32,21 @@
     color: white
 
 .login
-    width: 80px
-    height: 40px
-    line-height: 40px
+    width: 90px
+    height: 38px
+    line-height: 38px
     text-align: center
     border-radius: 20px
-    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,253,128,1) 100%)
+    background: linear-gradient(0deg, #3DABD0 0%, #75C189 100%)
+    font-size: 14px
 
 .register
-    font-size: 14px
+    font-size: 12px
     font-weight: 600
     user-select: none
 
 .sectionHeader
-    width: 1000px
+    width: 1140px
     margin: 0 auto
     color: white
     margin-top: 125px
@@ -55,13 +56,14 @@
     margin-top: 10px
 
 .loginSection
-    padding: 30px
+    padding-top: 50px
+    padding-bottom: 280px
 
 .loginBody
-    width: 1000px
+    width: 1140px
     margin: 0 auto
     padding: 20px
-    background: linear-gradient(white, white) padding-box, linear-gradient(90deg, rgba(34,37,195,1) 0%, rgba(45,253,128,1) 100%) border-box
+    background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #0A2AC7 0%, #2EC6B5 100%) border-box
     border-radius: 10px
     border: 2px solid transparent
     text-align: center
@@ -74,11 +76,27 @@
     font-weight: 300
     font-size: 12px
 
-input
+.inputContainer
+    display: flex
+    align-items: center
+    border: 1px solid #CCCCCC
+    margin-top: 10px
+    border-radius: 3px
+
+.inputIcon
+    height: 30px
+    width: 35px
+    padding: 5px
+    background: #EEEEEE
+    border-right: 1px solid #CCCCCC
+    img
+        height: 12px
+
+.email, .password
     height: 30px
     padding: 10px
     width: 100%
-    margin-top: 10px
+    border: none
 
 .passReset
     display: inline-block
