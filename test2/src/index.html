@@ -24,48 +24,56 @@
         </header>
         <section class="sectionContainer">
             <div class="registerSection">
-                <h2>Register</h2>
+                <h2 class="heading">Register</h2>
                 <a href="#" class="more">Find more about us</a>
                 <form class="form">      
                     <div class="inputContainer">
                         <label for="fname" class="label">First name</label>                  
                         <input type="text" name="fname" placeholder="First Name" required class="fname">
-                        <div class="warningEmail">Incorrect email</div>
+                        <div class="warningFnameShort">Name must have at least 2 characters</div>
+                        <div class="warningFnameLong">Name must not be longer than 20 characters</div>
+                        <div class="warningFnameLatin">Name must only include latin letters</div>
                     </div>
 
                     <div class="inputContainer">
                         <label for="lname" class="label">Last name</label>   
                         <input type="text" name="lname" placeholder="Last Name" required class="lname">
-                        <div class="warningPassword">Incorrect password</div>
+                        <div class="warningLnameShort">Name must have at least 2 characters</div>
+                        <div class="warningLnameLong">Name must not be longer than 20 characters</div>
+                        <div class="warningLnameLatin">Name must only include latin letters</div>
                     </div>
 
                     <div class="inputContainer">
                         <label for="email" class="label">Email</label>   
                         <input type="email" name="email" placeholder="Email" required class="email">
-                        <div class="warningPassword">Incorrect password</div>
+                        <div class="warningEmail">Incorrect email format</div>
                     </div>
 
                     <div class="inputContainer">
                         <label for="password" class="label">Password</label>   
                         <input type="text" name="password" placeholder="Password" required class="password">
-                        <div class="warningPassword">Incorrect password</div>
+                        <div class="warningPasswordShort">Password must be at least 6 characters long</div>
+                        <div class="warningPasswordLong">Password must not be longer than 25 characters</div>
+                        <div class="warningPasswordLatin">Password must only contain latin letters</div>
+                        <div class="warningPasswordLetter">Password must contain at least one letter</div>
+                        <div class="warningPasswordDigit">Password must contain at least one digit</div>
                     </div>
 
                     <div class="inputContainer">
                         <label for="confirmPassword" class="label">Confirm Password</label>   
                         <input type="text" name="confirmPassword" placeholder="Confirm Password" required class="confirmPassword">
-                        <div class="warningPassword">Incorrect password</div>
+                        <div class="warningConfirmPassword">Passwords do not match</div>
                     </div>
 
                     <div class="divider"></div>
 
                     <div class="checksContainer">
                         <div>
-                            <input type="checkbox" required name="terms">
+                            <input type="checkbox" required name="terms" class="termsCheckbox">
                             <label for="terms" class="label">I hereby confirm that I have read, understood and accept the Terms and Conditions of HAPPs</label>
                         </div>
                         <div>
-                            <input type="checkbox" required name="requirements">
+                            <input type="checkbox" required name="requirements" class="reqsCheckbox">
                             <label for="requirements" class="label">I hereby confirm that I meet the User requirements</label>
                         </div>
                     </div>
@@ -74,6 +82,7 @@
                 </form>
                 <div class="loginAcc">Already a member? <a href="#">Login</a></div>
             </div>
+            <div class="welcome hidden">Welcome!</div>
         </section>
         <footer class="footerContainer">
             <div class="footer">

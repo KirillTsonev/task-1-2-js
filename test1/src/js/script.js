@@ -26,30 +26,34 @@ password.addEventListener("paste", (e) => {
 
 login.addEventListener("click", (e) => {
     if (emailString !== "hello@ab.bg" && /@.+/.test(emailString)) {
-        email.classList.add("wrongCredential")
-        emailWarning.classList.add("warningActive")
+        email.classList.add("wrongCredential");
+        emailWarning.classList.add("warningActive");
     }
+
     if (passwordString !== "1234" && passwordString) {
-        password.classList.add("wrongCredential")
-        passwordWarning.classList.add("warningActive")
+        password.classList.add("wrongCredential");
+        passwordWarning.classList.add("warningActive");
     }
+
     if (emailString === "hello@ab.bg") {
-        email.classList.remove("wrongCredential")
-        emailWarning.classList.remove("warningActive")
+        email.classList.remove("wrongCredential");
+        emailWarning.classList.remove("warningActive");
     }
+
     if (passwordString === "1234") {
-        password.classList.remove("wrongCredential")
-        passwordWarning.classList.remove("warningActive")
+        password.classList.remove("wrongCredential");
+        passwordWarning.classList.remove("warningActive");
     }
+    
     if (emailString === "hello@ab.bg" && passwordString === "1234") {
-        e.preventDefault()
-        success.classList.add("successActive")
+        e.preventDefault();
+        success.classList.add("successActive");
         console.log({
             username: emailString,
             password: passwordString
         })
     } else {
-        passwordString = ""
-        password.value = ""
+        passwordString = "";
+        password.value = "";
     }
 });
