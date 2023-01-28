@@ -1,0 +1,86 @@
+.sectionContainer
+    padding-top: 50px
+    padding-bottom: 280px
+
+.registerSection
+    width: 1140px
+    margin: 0 auto
+    padding: 30px 20px 20px 20px
+    background: linear-gradient(white, white) padding-box, linear-gradient(45deg, #0A2AC7 0%, #2EC6B5 100%) border-box
+    border-radius: 10px
+    border: 2px solid transparent
+    text-align: center
+
+.more
+    display: inline-block
+    margin-top: 30px
+    text-decoration: none
+    color: black
+    font-weight: 300
+    font-size: 12px
+
+.inputContainer, .checksContainer
+    display: flex
+    flex-direction: column
+    align-items: start
+    margin-top: 20px
+
+.label
+    color: #666666
+    font-size: 13px
+    font-weight: 600
+    margin-bottom: 5px
+
+.fname, .lname, .email, .password, .confirmPassword
+    height: 30px
+    padding: 10px
+    width: 100%
+
+.divider
+    width: 100%
+    height: 1px
+    background: #EEEEEE
+    margin-top: 20px
+
+.warningEmail, .warningPassword
+    color: red
+    text-align: left
+    font-size: 14px
+    display: none
+
+.warningActive
+    display: block
+
+.wrongCredential
+    border: 1px solid red
+
+.submitRegister
+    color: white
+    width: 125px
+    height: 35px
+    border: none
+    line-height: 10px
+    background: #78D6CB
+    font-weight: 600
+    border-radius: 20px
+    position: relative
+    text-align-last: left
+    padding-left: 20px
+    cursor: pointer
+    margin-top: 20px
+    &::after
+        content: ""
+        position: absolute
+        top: 11px
+        right: 20px
+        background: url("../icons/register.png") center center/cover no-repeat
+        width: 15px
+        height: 15px
+
+.loginAcc
+    color: #999999
+    font-size: 12px
+    margin-top: 10px
+    a
+        color: #999999
+        text-decoration: none

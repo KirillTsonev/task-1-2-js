@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration</title>
+        <link rel="stylesheet" href="css/style.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    </head>
+    <body>
+        <header class="headerContainer">
+            <div class="header">
+                <img src="../src/img/logo.svg" alt="Logo" class="logo">
+                <div class="credentials">
+                    <a href="#" class="login">Login</a>
+                    <a href="#" class="register">Register</a>
+                </div>
+            </div>
+            <div class="sectionHeader">
+                <h1>Register</h1>
+                <div class="subheading">Become a member</div>
+            </div>
+        </header>
+        <section class="sectionContainer">
+            <div class="registerSection">
+                <h2>Register</h2>
+                <a href="#" class="more">Find more about us</a>
+                <form class="form">      
+                    <div class="inputContainer">
+                        <label for="fname" class="label">First name</label>                  
+                        <input type="text" name="fname" placeholder="First Name" required class="fname">
+                        <div class="warningEmail">Incorrect email</div>
+                    </div>
+
+                    <div class="inputContainer">
+                        <label for="lname" class="label">Last name</label>   
+                        <input type="text" name="lname" placeholder="Last Name" required class="lname">
+                        <div class="warningPassword">Incorrect password</div>
+                    </div>
+
+                    <div class="inputContainer">
+                        <label for="email" class="label">Email</label>   
+                        <input type="email" name="email" placeholder="Email" required class="email">
+                        <div class="warningPassword">Incorrect password</div>
+                    </div>
+
+                    <div class="inputContainer">
+                        <label for="password" class="label">Password</label>   
+                        <input type="text" name="password" placeholder="Password" required class="password">
+                        <div class="warningPassword">Incorrect password</div>
+                    </div>
+
+                    <div class="inputContainer">
+                        <label for="confirmPassword" class="label">Confirm Password</label>   
+                        <input type="text" name="confirmPassword" placeholder="Confirm Password" required class="confirmPassword">
+                        <div class="warningPassword">Incorrect password</div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="checksContainer">
+                        <div>
+                            <input type="checkbox" required name="terms">
+                            <label for="terms" class="label">I hereby confirm that I have read, understood and accept the Terms and Conditions of HAPPs</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" required name="requirements">
+                            <label for="requirements" class="label">I hereby confirm that I meet the User requirements</label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submitRegister">REGISTER</button>
+                </form>
+                <div class="loginAcc">Already a member? <a href="#">Login</a></div>
+            </div>
+        </section>
+        <footer class="footerContainer">
+            <div class="footer">
+                <img src="../src/img/logo.svg" alt="Logo" class="logo">
+                <div class="footerLinks">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms and Conditions</a>
+                </div>
+                <div class="copyright">Copyrights @ 2021</div>
+                <div class="footerSocials">
+                    <a href="#"><img src="../src/icons/fb.png" alt="Facebook"></a>
+                    <a href="#"><img src="../src/icons/twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="../src/icons/linkedin.png" alt="Linkedin"></a>
+                    <a href="#"><img src="../src/icons/telegram.png" alt="Telegram"></a>
+                </div>
+            </div>
+        </footer>
+        <script type="module" src="js/script.js"></script>
+    </body>
+</html>
