@@ -26,18 +26,23 @@
             <div class="loginSection">
                 <h2>Login</h2>
                 <a href="#" class="more">Find more about us</a>
-                <form>
+                <form class="form">
                     <div class="inputContainer">
                         <div class="inputIcon"><img src="../src/icons/letter.png" alt="Letter"></div>
-                        <input type="email" name="email" placeholder="Email" required class="inputField">
+                        <input type="email" name="email" placeholder="Email" required class="email">
                     </div>
+                    <div class="warningEmail">Incorrect email</div>
                     <div class="inputContainer">
                         <div class="inputIcon"><img src="../src/icons/lock.png" alt="Lock"></div>
-                        <input type="text" name="password" placeholder="Password" required class="inputField">
+                        <input type="text" name="password" placeholder="Password" required class="password">
                     </div>
+                    <div class="warningPassword">Incorrect password</div>
+                    <a href="#" class="passReset">Forgot Password</a>
+                    <button type="submit" class="submitLogin">LOGIN</button>
                 </form>
-                <a href="#" class="passReset">Forgot Password</a>
-                <button class="submitLogin">LOGIN</button>
+                <div class="success">Login successful!</div>
+                <!-- <a href="#" class="passReset">Forgot Password</a>
+                <button type="submit" class="submitLogin">LOGIN</button> -->
                 <div class="createAcc">Not a member yet? <a href="#">Create an account</a></div>
             </div>
         </section>

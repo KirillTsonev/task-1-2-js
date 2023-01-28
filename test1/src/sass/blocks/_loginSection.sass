@@ -35,11 +35,52 @@
     img
         height: 12px
 
-.inputField
+.email, .password
     height: 30px
     padding: 10px
     width: 100%
     border: none
+
+.warningEmail, .warningPassword
+    color: red
+    text-align: left
+    font-size: 14px
+    display: none
+
+.warningActive
+    display: block
+
+.wrongCredential
+    border: 1px solid red
+
+.success
+    background: #2EBFAE
+    width: 300px
+    height: 150px
+    color: white
+    font-size: 22px
+    line-height: 150px
+    position: absolute
+    left: calc(50% - 150px)
+    top: 650px
+    opacity: 0
+
+@keyframes success
+    0%
+        opacity: .5
+        transform: translateY(-200px)
+    25%
+        opacity: 1
+        transform: translateY(-250px)
+    50%
+        opacity: 1
+        transform: translateY(-250px)
+    100%
+        opacity: .05
+        transform: translateY(-250px)
+
+.successActive
+    animation: success 2.5s 1 linear
 
 .passReset
     display: inline-block
