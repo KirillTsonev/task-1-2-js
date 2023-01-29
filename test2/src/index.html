@@ -29,7 +29,7 @@
                 <form class="form">      
                     <div class="inputContainer">
                         <label for="fname" class="label">First name</label>                  
-                        <input type="text" name="fname" placeholder="First Name" required class="fname">
+                        <input type="text" name="fname" placeholder="First Name" required class="fname" id="fname">
                         <div class="warningFnameShort">Name must have at least 2 characters</div>
                         <div class="warningFnameLong">Name must not be longer than 20 characters</div>
                         <div class="warningFnameLatin">Name must only include latin letters</div>
@@ -37,7 +37,7 @@
 
                     <div class="inputContainer">
                         <label for="lname" class="label">Last name</label>   
-                        <input type="text" name="lname" placeholder="Last Name" required class="lname">
+                        <input type="text" name="lname" placeholder="Last Name" required class="lname" id="lname">
                         <div class="warningLnameShort">Name must have at least 2 characters</div>
                         <div class="warningLnameLong">Name must not be longer than 20 characters</div>
                         <div class="warningLnameLatin">Name must only include latin letters</div>
@@ -45,13 +45,13 @@
 
                     <div class="inputContainer">
                         <label for="email" class="label">Email</label>   
-                        <input type="email" name="email" placeholder="Email" required class="email">
+                        <input type="email" name="email" placeholder="Email" required class="email" id="email">
                         <div class="warningEmail">Incorrect email format</div>
                     </div>
 
                     <div class="inputContainer">
                         <label for="password" class="label">Password</label>   
-                        <input type="text" name="password" placeholder="Password" required class="password">
+                        <input type="text" name="password" placeholder="Password" required class="password" id="password">
                         <div class="warningPasswordShort">Password must be at least 6 characters long</div>
                         <div class="warningPasswordLong">Password must not be longer than 25 characters</div>
                         <div class="warningPasswordLatin">Password must only contain latin letters</div>
@@ -61,7 +61,7 @@
 
                     <div class="inputContainer">
                         <label for="confirmPassword" class="label">Confirm Password</label>   
-                        <input type="text" name="confirmPassword" placeholder="Confirm Password" required class="confirmPassword">
+                        <input type="text" name="confirmPassword" placeholder="Confirm Password" required class="confirmPassword" id="confirmPassword">
                         <div class="warningConfirmPassword">Passwords do not match</div>
                     </div>
 
@@ -69,11 +69,11 @@
 
                     <div class="checksContainer">
                         <div>
-                            <input type="checkbox" required name="terms" class="termsCheckbox">
+                            <input type="checkbox" required name="terms" class="termsCheckbox" id="terms">
                             <label for="terms" class="label">I hereby confirm that I have read, understood and accept the Terms and Conditions of HAPPs</label>
                         </div>
                         <div>
-                            <input type="checkbox" required name="requirements" class="reqsCheckbox">
+                            <input type="checkbox" required name="requirements" class="reqsCheckbox" id="requirements">
                             <label for="requirements" class="label">I hereby confirm that I meet the User requirements</label>
                         </div>
                     </div>
